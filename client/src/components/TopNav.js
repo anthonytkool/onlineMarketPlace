@@ -23,6 +23,12 @@ const TopNav = () => {
       </Link>
 
       {auth !== null && (
+        <Link className='nav-link' to='/dashboard'>
+          Dashboard
+        </Link>
+      )}
+
+      {auth !== null && (
         <button
           type='button'
           className='btn btn-outline-info nav-link pointer'
